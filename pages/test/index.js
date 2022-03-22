@@ -1,6 +1,5 @@
-import axios from 'axios';
+
 import React, { useEffect, createRef, useState, useRef } from 'react';
-import './css.css';
 import Head from 'next/head';
 import html2canvas from "html2canvas";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
@@ -18,13 +17,12 @@ const Welcome = () => {
     }).then(function(canvas) {
       var image = canvas.toDataURL("image/png");
       console.log(image);
-      localStorage.setItem('image', img);
     setImage(image);
 
    });    
     
     };
-    const img = localStorage.getItem('image');
+    const url = window.location.href;
     return(
         <>
         <Head>
@@ -35,7 +33,7 @@ const Welcome = () => {
 <div>
         <button className={["btn"].join(" ")} onClick={(e) => exportAsImage(ref.current, 'image', e)}>
         <FacebookShareButton
-        url={window.location.href}
+        url={url}
       // url="https://dantri.com.vn/du-lich/nguoi-ha-noi-do-xo-toi-chup-anh-voi-duong-la-bang-dep-nhu-han-quoc-20220321214503089.htm"
         quote={"フェイスブックはタイトルが付けれるようです"}
         hashtag={"#hashtag"}

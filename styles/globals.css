@@ -14,3 +14,104 @@ a {
 * {
   box-sizing: border-box;
 }
+.result-bg{
+  width:940px;
+  height: 492px;
+  background: #fff;
+  padding: 3px;
+}
+body{
+  background:#ddd;
+}
+.title-01{
+  text-align:center;
+  color:#FD6F21;
+  padding-top: 25px;
+  font-weight: bold;
+  font-size:18px;
+}
+.title-02{
+  text-align: center;
+  margin-top: 5px;
+}
+.title-02 span{
+  color: #4F72BC;
+  font-weight: bold;
+}
+.result-k{
+  padding: 10px 10px;
+  display: flex;
+}
+.list{
+  padding: 10px 10px 20px 10px;
+  background: #ddd;
+  width: 80%;
+}
+.list p{
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.list div{
+  display:flex;
+}
+.img-info{
+  width: 20%;
+  padding: 5px;
+}
+.img-info div{
+  padding-top: 55px;
+}
+.item-bg{
+  width: 31.5%;
+  height: auto;
+}
+.img-info div p{
+  font-weight: bold;
+}
+.magin{
+  margin-left: 20px;
+  margin-right:20px;
+}
+.item-bg div {
+  border: 1px solid;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  display:inline;
+  background:#fff;
+}
+.item-bg div > img{
+  border-radius: 20px;
+  width: 100%;
+}
+
+.img-info div{
+  width: 85%;
+  margin: auto;
+  text-align: center
+}
+.img-info div > img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.share-bg{
+  padding-top: 15px;
+}
+.share-bg div{
+  box-shadow: 5px 8px 20px #ccc;
+  width: 400px;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 3px
+}
+.share-bg div > img{
+  width: 21px;
+  height: 18px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
